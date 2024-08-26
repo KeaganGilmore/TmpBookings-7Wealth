@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Meeting</h1>
+        <form id="bookingForm">
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" required>
+            
+            <label for="meeting_type">Meeting Type:</label>
+            <select id="meeting_type" name="meeting_type" required>
+                <option value="consultation">Consultation</option>
+                <option value="follow-up">Follow-Up</option>
+                <option value="review">Review</option>
+            </select>
+
+            <label for="booking_date">Booking Date:</label>
+            <input type="date" id="booking_date" name="booking_date" required>
+
+            <button type="submit">Book Meeting</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
